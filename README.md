@@ -14,4 +14,4 @@ Book Site is online book buying platform that allows user to buy, rate, search e
 
 ## Data Base representation
 
-![Alt text](images/database.png)
+<img src="/images/logo.png" alt="Logo" width="817" height="615">
