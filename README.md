@@ -32,5 +32,4 @@ Book Site is online book buying platform that allows user to buy, rate, search e
 <img width="409" height="308" alt="database" src="https://github.com/user-attachments/assets/67627618-3900-4aad-987d-279965c9a1d6" />
 
 
-
 Will change as the project progresses
