@@ -14,16 +14,19 @@ Book Site is online book buying platform that allows user to buy, rate, search e
 
 ## Authors Endpoints
 | **Endpoint** | **Request** | **Usage** | **Response Body** |
+| --- | --- | --- | --- |
 | /authors | GET | Show all authors | [{"id":"decimal", "name": "string"}, ...] |
 | /authors/id | GET | Show speicific author | {"id": "decimal", "name":"string"} |
 
 ## Publisher Endpoints
 | **Endpoint** | **Request** | **Usage** | **Response Body** |
+| --- | --- | --- | --- |
 | /publisher | GET | Show all publishers | [{"id":"decimal", "name": "string"}, ...] |
 | /publisher/id | GET | Show specific publisher | {"id": "decimal", "name": "string"} |
 
 ## Genre Endpoints
 | **Endpoint** | **Request** | **Usage** | **Response Body** |
+| --- | --- | --- | --- |
 | /genre | GET | Show all genres | [{"id": "decimal", "name": "string"}, ...] |
 | /genre/id | GET | Show all book with this genre | {"id": "decimal", "name": "string"} |
 
