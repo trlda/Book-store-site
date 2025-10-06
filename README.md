@@ -35,4 +35,22 @@ Book Site is online book buying platform that allows user to buy, rate, search e
 <img width="409" height="308" alt="database" src="https://github.com/user-attachments/assets/67627618-3900-4aad-987d-279965c9a1d6" />
 
 
+
+## How to run project
+
+1. Create virtual env
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+3. Apply migrations
+```bash
+python manage.py migrate
+```
+4. Run the server
+```bash
+python manage.py runserver
+```
+5. Run live server for frontend 
+
 Will change as the project progresses
