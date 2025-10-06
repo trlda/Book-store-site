@@ -51,6 +51,8 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
-5. Run live server for frontend 
+5. Run live server for frontend
+> For Vscode u need to install extension "Live Server by Ritwick Dey"
+> PyCharm has his own built-in live server
 
 Will change as the project progresses
