@@ -4,31 +4,80 @@
 Book Site is online book buying platform that allows user to buy, rate, search etc. The application feature user authentication, book catalog with advanced filtering, author and publisher pages, shopping cart functionality, and order management. Users can explore books by various criteria while administrators can manage the book inventory, authors, and publishers.
 
 ## Book Endpoints
-| **Endpoint** | **Request** | **Usage** | **Response Body** |
+| **Endpoint** | **Request** | **Usage** |
+| --- | --- | --- |
+| /books | GET | Show all books |
+| /books/id | GET | Show specific book |
+| /books/id | PUT | Update book |
+| /books | POST | Create a new book |
+| /books/id | DELETE | Delete specific book |
+
+## Book request/response body
+| **Endpoint** | **Request** | **Request Body** | **Response Body** |
 | --- | --- | --- | --- |
-| /books | GET | Show all books | [{"id": "decimal", "name": "string", "price": "decimal"}, ..]
-| /books/id | GET | Show specific book | {"id": "decimal", "name": "string", "price": "decimal"}
-| /books/id | PUT | Update book | {"id": "decimal", "name": "string", "price": "decimal"}
-| /books | POST | Create a new book | [{"id": "decimal", "name": "string", "price": "decimal"}, ..]
-| /books/id | DELETE | Delete specific book | {"id": "decimal", "name": "string", "price": "decimal"}
+| /books | GET | [{"id": "decimal", "name": "string", "price": "decimal"}, ...] | [{"id": "decimal", "name": "string", "price": "decimal"}, ...] |
+| /books/id | GET | {"id": "decimal", "name": "string", "price": "decimal"} | {"id": "decimal", "name": "string", "price": "decimal"} |
+| /books/id | PUT | {"id": "decimal", "name": "string", "price": "decimal"} | {"id": "decimal", "name": "string", "price": "decimal"} |
+| /books | POST | [{"id": "decimal", "name": "string", "price": "decimal"}, ...] | [{"id": "decimal", "name": "string", "price": "decimal"}, ...] |
+| /books/id | DELETE | {"id": "decimal", "name": "string", "price": "decimal"} |
+
 
 ## Authors Endpoints
-| **Endpoint** | **Request** | **Usage** | **Response Body** |
+| **Endpoint** | **Request** | **Usage** |
+| --- | --- | --- |
+| /authors | GET | Show all authors |
+| /authors/id | GET | Show speicific author |
+| /authors/id | PUT | Update author |
+| /authors | POST | Add new author |
+| /authors/id | DELETE | Delete specific author |
+
+## Authors request/response body
+| **Endpoint** | **Request** | **Request Body** | **Response Body** |
 | --- | --- | --- | --- |
-| /authors | GET | Show all authors | [{"id":"decimal", "name": "string"}, ...] |
-| /authors/id | GET | Show speicific author | {"id": "decimal", "name":"string"} |
+| /authors | GET | [{"id":"decimal", "name": "string"}, ...] | [{"id":"decimal", "name": "string"}, ...] |
+| /authors/id | GET | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+| /authors/id | PUT | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+| /authors | POST | [{"id":"decimal", "name": "string"}, ...] | [{"id":"decimal", "name": "string"}, ...] |
+| /authors/id | DELETE | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+
 
 ## Publisher Endpoints
-| **Endpoint** | **Request** | **Usage** | **Response Body** |
+| **Endpoint** | **Request** | **Usage** |
+| --- | --- | --- |
+| /publishers | GET | Show all publishers |
+| /publishers/id | GET | Show specific publisher |
+| /publishers/id | PUT | Update publisher | 
+| /publishers | POST | Add new publisher |
+| /publishers/id | DELETE | Delete specific publisher |
+
+## Publisher request/response body
+| **Endpoint** | **Request** | **Request Body** | **Response Body** |
 | --- | --- | --- | --- |
-| /publisher | GET | Show all publishers | [{"id":"decimal", "name": "string"}, ...] |
-| /publisher/id | GET | Show specific publisher | {"id": "decimal", "name": "string"} |
+| /publishers | GET | [{"id":"decimal", "name": "string"}, ...] | [{"id":"decimal", "name": "string"}, ...] |
+| /publishers/id | GET | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+| /publishers/id | PUT | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+| /publishers | POST | [{"id":"decimal", "name": "string"}, ...] | [{"id":"decimal", "name": "string"}, ...] |
+| /publishers/id | DELETE | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+
 
 ## Genre Endpoints
-| **Endpoint** | **Request** | **Usage** | **Response Body** |
+| **Endpoint** | **Request** | **Usage** |
+| --- | --- | --- |
+| /genres | GET | Show all genres |
+| /genres/id | GET | Show all book with this genre |
+| /genres/id | PUT | Update genre |
+| /genres | POST | Add new genre |
+| /genres/id | DELETE | Delete specific genre |
+
+## Genre request/response body
+| **Endpoint** | **Request** | **Request Body** | **Response Body** |
 | --- | --- | --- | --- |
-| /genre | GET | Show all genres | [{"id": "decimal", "name": "string"}, ...] |
-| /genre/id | GET | Show all book with this genre | {"id": "decimal", "name": "string"} |
+| /genres | GET | [{"id":"decimal", "name": "string"}, ...] | [{"id":"decimal", "name": "string"}, ...] |
+| /genres/id | GET | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+| /genres/id | PUT | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+| /genres | POST | [{"id":"decimal", "name": "string"}, ...] | [{"id":"decimal", "name": "string"}, ...] |
+| /genres/id | DELETE | {"id": "decimal", "name":"string"} | {"id": "decimal", "name":"string"} |
+
 
 ## Data Base representation
 
